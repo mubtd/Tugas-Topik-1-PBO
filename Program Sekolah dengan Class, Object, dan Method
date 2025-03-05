@@ -1,0 +1,19 @@
+class Sekolah() :
+    def __init__(self, jumlah_murid, jumlah_guru, akreditasi):
+        self.jumlah_murid = jumlah_murid
+        self.jumlah_guru = jumlah_guru
+        self.akreditasi = akreditasi
+    
+    def memasukan_murid(self):
+        print(f'Jumlah murid yang diterima di SMK 47 Kapal Karam adalah {self.jumlah_murid}')
+
+    def mengeluarkan_murid(self):
+        print(f'Karena suatu masalah ada {self.jumlah_murid} anak yang dikeluarkan dari SMK 47')
+
+    def oprec_guru(self):
+        print(f'SMK 47 Kapal Karam yang berakreditasi {self.akreditasi} sedang melakukan open recruitment untuk {self.jumlah_guru} guru')
+
+sekolahku = Sekolah(19,45,'A')
+sekolahku.memasukan_murid()
+sekolahku.mengeluarkan_murid()
+sekolahku.oprec_guru()
